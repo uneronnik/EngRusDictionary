@@ -1,0 +1,6 @@
+D:\C#\EngRusDictionary\EngRusDictionary\bin\Debug\EngRusDictionary.exe.config
+D:\C#\EngRusDictionary\EngRusDictionary\bin\Debug\EngRusDictionary.exe
+D:\C#\EngRusDictionary\EngRusDictionary\bin\Debug\EngRusDictionary.pdb
+D:\C#\EngRusDictionary\EngRusDictionary\obj\Debug\EngRusDictionary.csprojAssemblyReference.cache
+D:\C#\EngRusDictionary\EngRusDictionary\obj\Debug\EngRusDictionary.exe
+D:\C#\EngRusDictionary\EngRusDictionary\obj\Debug\EngRusDictionary.pdb
