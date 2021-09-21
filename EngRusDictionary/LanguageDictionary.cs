@@ -68,7 +68,7 @@ namespace EngRusDictionary
                 _translationDirection = TranslationDirection.EngRus;
         }
 
-        public List<string> GetTranslations(string wordToFind)
+        public IEnumerable<string> GetTranslations(string wordToFind)
         {
             wordToFind = wordToFind.ToLower();
             if (FindWordLanguage(wordToFind) == 2 && _translationDirection == TranslationDirection.EngRus)
