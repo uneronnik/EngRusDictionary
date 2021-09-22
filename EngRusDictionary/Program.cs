@@ -11,21 +11,25 @@ namespace EngRusDictionary
         static void Main(string[] args)
         {
             // Я не стал делать пользовательский интерфейс, а то я так никогда не закрою все домашки
-            LanguageDictionary dictionary = new LanguageDictionary(TranslationDirection.EngRus);
-            dictionary.AddTranslation("Apple company", "огрызок");
-            dictionary.AddTranslation("apple", "яблоко");
-            dictionary.AddTranslation("слово", "word");
-            dictionary.AddTranslation("огрызок", "apple core");
+            LanguageDictionary dictionary = new LanguageDictionary();
+            dictionary.AddTranslation("Россия", "Russia");
+            dictionary.AddTranslation("Америка", "America");
+            dictionary.AddTranslation("USA", "Америка");
+            dictionary.AddTranslation("Китай", "China");
             
-            foreach (var translation in dictionary.GetTranslations("APPLE"))
+            foreach (var translation in dictionary.GetTranslations("Россия"))
             {
-                Console.WriteLine($"apple - {translation}");
+                Console.WriteLine($"Россия - {translation}");
             }
             
             //dictionary.SwitchTranslationDirection();
-            foreach (var translation in dictionary.GetTranslations("Огрызок"))
+            foreach (var translation in dictionary.GetTranslations("America"))
             {
-                Console.WriteLine($"огрызок - {translation}");
+                Console.WriteLine($"America - {translation}");
+            }
+            foreach (var translation in dictionary.GetTranslations("Америка"))
+            {
+                Console.WriteLine($"Америка - {translation}");
             }
             Console.ReadKey(); 
         }
