@@ -22,7 +22,7 @@ namespace EngRusDictionary
                 Console.WriteLine($"Россия - {translation}");
             }
             
-            //dictionary.SwitchTranslationDirection();
+            
             foreach (var translation in dictionary.GetTranslations("America"))
             {
                 Console.WriteLine($"America - {translation}");

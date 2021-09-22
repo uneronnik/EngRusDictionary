@@ -51,16 +51,12 @@ namespace EngRusDictionary
             }
             return 2;
         }
-        
-        public void ChangeTranslationDirection(TranslationDirection translationDirection)
-        {
-            _translationDirection = translationDirection;
-        }
+       
 
         public IEnumerable<string> GetTranslations(string wordToFind)
         {
             if (FindWordLanguage(wordToFind) == 2)
-                ChangeTranslationDirection(TranslationDirection.RusEng);
+                _translationDirection =  TranslationDirection.RusEng;
 
 
             List<string> translations = new List<string>();
@@ -77,7 +73,7 @@ namespace EngRusDictionary
                         translations.Add(word.Word);
                 }
             }
-            ChangeTranslationDirection(TranslationDirection.EngRus);
+            _translationDirection = TranslationDirection.EngRus;
             if (translations.Count == 0)
                 throw new Exception("Перевод не найден");
             return translations;
